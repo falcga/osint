@@ -3,43 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Инструменты — команды запуска</title>
+    <title>OSINT Инструменты — классификация и команды запуска</title>
 </head>
 <body>
 
     <h1>Классификация OSINT-инструментов и команды запуска</h1>
 
-    <h2>Поисковые системы и метапоиск (веб-сервисы, команды не требуются)</h2>
+    <h2>Поисковые системы и метапоиск</h2>
     <ul>
-        <li><strong>Whatsmyname.me</strong> — <a href="https://whatsmyname.me/" target="_blank">whatsmyname.me</a></li>
-        <li><strong>Telegago (Google CSE)</strong> — <a href="https://cse.google.com/cse?&cx=006368593537057042503:efxu7xprihg#gsc.tab=0" target="_blank">cse.google.com</a></li>
-        <li><strong>ZoomEye</strong> — <a href="https://www.zoomeye.ai/" target="_blank">zoomeye.ai</a></li>
-        <li><strong>Boardreader</strong> — <a href="https://boardreader.com" target="_blank">boardreader.com</a></li>
-        <li><strong>Ahmia.fi</strong> — <a href="https://ahmia.fi/" target="_blank">ahmia.fi</a></li>
+        <li>
+            <strong>Whatsmyname.me</strong> — поиск имени пользователя (username) на 500+ онлайн-платформах для оценки цифрового следа. <a href="https://whatsmyname.me/" target="_blank">whatsmyname.me</a>
+        </li>
+        <li>
+            <strong>Telegago (Google CSE)</strong> — кастомный поисковик от Bellingcat для нахождения публичных каналов и групп Telegram через Google. <a href="https://cse.google.com/cse?&cx=006368593537057042503:efxu7xprihg#gsc.tab=0" target="_blank">cse.google.com</a>
+        </li>
+        <li>
+            <strong>ZoomEye</strong> — сканер киберпространства: находит открытые интернет-устройства (роутеры, серверы, веб-камеры) и оценивает поверхность атаки. <a href="https://www.zoomeye.ai/" target="_blank">zoomeye.ai</a>
+        </li>
+        <li>
+            <strong>Boardreader</strong> — индексирует обсуждения на форумах, досках объявлений и в дискуссионных сообществах. <a href="https://boardreader.com" target="_blank">boardreader.com</a>
+        </li>
+        <li>
+            <strong>Ahmia.fi</strong> — поисковик по .onion-сайтам в сети Tor. <a href="https://ahmia.fi/" target="_blank">ahmia.fi</a>
+        </li>
     </ul>
 
-    <h2>Изображения и видео (веб-сервисы, команды не требуются)</h2>
+    <h2>Изображения и видео</h2>
     <ul>
-        <li><strong>TinEye</strong> — <a href="https://tineye.com/" target="_blank">tineye.com</a></li>
-        <li><strong>PimEyes</strong> — <a href="https://pimeyes.com/en" target="_blank">pimeyes.com</a></li>
-        <li><strong>BetaFace (Demo)</strong> — <a href="http://betaface.com/demo_old.html" target="_blank">betaface.com</a></li>
-        <li><strong>Shadowmap</strong> — <a href="https://app.shadowmap.org/?sunVector" target="_blank">app.shadowmap.org</a></li>
-        <li><strong>GeoHints</strong> — <a href="https://geohints.com/" target="_blank">geohints.com</a></li>
-        <li><strong>Pl@ntNet</strong> — <a href="https://identify.plantnet.org/ru" target="_blank">identify.plantnet.org</a></li>
+        <li>
+            <strong>TinEye</strong> — обратный поиск изображений: находит первоисточник, изменённые версии и копии в высоком разрешении. <a href="https://tineye.com/" target="_blank">tineye.com</a>
+        </li>
+        <li>
+            <strong>PimEyes</strong> — поиск лиц по фотографии среди публично доступных изображений в интернете. <a href="https://pimeyes.com/en" target="_blank">pimeyes.com</a>
+        </li>
+        <li>
+            <strong>BetaFace (Demo)</strong> — демонстрационный сервис распознавания лиц: ключевые точки, сравнение, анализ. <a href="http://betaface.com/demo_old.html" target="_blank">betaface.com</a>
+        </li>
+        <li>
+            <strong>Shadowmap</strong> — 3D-модель положения солнца и теней в заданной точке и времени, помогает геолоцировать фото и видео. <a href="https://app.shadowmap.org/?sunVector" target="_blank">app.shadowmap.org</a>
+        </li>
+        <li>
+            <strong>GeoHints</strong> — справочник визуальных маркеров стран: дорожные знаки, номерные знаки, столбы, почтовые ящики. <a href="https://geohints.com/" target="_blank">geohints.com</a>
+        </li>
+        <li>
+            <strong>Pl@ntNet</strong> — идентификация растений по фотографии, полезно при анализе окружающей среды на снимках. <a href="https://identify.plantnet.org/ru" target="_blank">identify.plantnet.org</a>
+        </li>
     </ul>
 
     <h2>Утечки данных и безопасность</h2>
     <ul>
         <li>
-            <strong>h8mail</strong> — OSINT-инструмент для поиска утечек по email. <a href="https://github.com/kh4st3x00/h8mail" target="_blank">GitHub</a>
+            <strong>h8mail</strong> — поиск утечек и паролей по email-адресу через HaveIBeenPwned, Dehashed и локальные базы. <a href="https://github.com/kh4st3x00/h8mail" target="_blank">GitHub</a>
             <br><strong>Установка через pip:</strong>
             <pre><code>pip3 install h8mail</code></pre>
             <strong>Одноразовый запуск в Docker (справка):</strong>
             <pre><code>docker run -ti --rm kh4st3x00/h8mail -h</code></pre>
         </li>
         <li>
-            <strong>Betterleaks</strong> — быстрый сканер секретов в git-репозиториях. <a href="https://github.com/betterleaks/betterleaks" target="_blank">GitHub</a>
-            <br><strong>Установка через Homebrew (macOS/Linux):</strong>
+            <strong>Betterleaks</strong> — быстрый сканер секретов (API-ключей, паролей, токенов) в git-репозиториях с live-валидацией найденного. <a href="https://github.com/betterleaks/betterleaks" target="_blank">GitHub</a>
+            <br><strong>Установка через Homebrew:</strong>
             <pre><code>brew install betterleaks</code></pre>
             <strong>Установка через Go:</strong>
             <pre><code>go install github.com/betterleaks/betterleaks/v2@latest</code></pre>
@@ -47,10 +69,10 @@
             <pre><code>docker run --rm -v "$(pwd):/src" ghcr.io/betterleaks/betterleaks:latest /src</code></pre>
         </li>
         <li>
-            <strong>Gitleaks</strong> — SAST-инструмент для поиска секретов в git-репозиториях. <a href="https://github.com/gitleaks/gitleaks" target="_blank">GitHub</a>
+            <strong>Gitleaks</strong> — SAST-сканер жёстко закодированных секретов в git-истории и файлах; работает как CLI, pre-commit hook или GitHub Action. <a href="https://github.com/gitleaks/gitleaks" target="_blank">GitHub</a>
             <br><strong>Одноразовый запуск в Docker (сканирование локального репозитория):</strong>
             <pre><code>docker run --rm -v "$(pwd):/repo" ghcr.io/gitleaks/gitleaks:latest git /repo</code></pre>
-            <strong>Или через Docker Hub:</strong>
+            <strong>Альтернативный образ на Docker Hub:</strong>
             <pre><code>docker run --rm -v "$(pwd):/path" zricethezav/gitleaks:latest detect --source="/path" -v</code></pre>
         </li>
     </ul>
@@ -58,52 +80,56 @@
     <h2>Анализ сетей и инфраструктуры</h2>
     <ul>
         <li>
-            <strong>Iknowwhatyoudownload.com</strong> — веб-сервис, команды не требуются. <a href="https://iknowwhatyoudownload.com/en/peer/" target="_blank">iknowwhatyoudownload.com</a>
+            <strong>Iknowwhatyoudownload.com</strong> — показывает, какие торренты скачивались и раздавались с конкретного IP-адреса по данным DHT. <a href="https://iknowwhatyoudownload.com/en/peer/" target="_blank">iknowwhatyoudownload.com</a>
         </li>
         <li>
-            <strong>Fluxion</strong> — аудит Wi-Fi сетей. <a href="https://github.com/FluxionNetwork/fluxion" target="_blank">GitHub</a>
-            <br><strong>Скачивание и переход в папку:</strong>
+            <strong>Fluxion</strong> — аудит Wi-Fi: поднимает фейковую точку доступа и через социальную инженерию выманивает пароль WPA/WPA2. <a href="https://github.com/FluxionNetwork/fluxion" target="_blank">GitHub</a>
+            <br><strong>Клонирование репозитория:</strong>
             <pre><code>git clone https://github.com/FluxionNetwork/fluxion.git
 cd fluxion</code></pre>
-            <strong>Запуск (потребуются права root и зависимости):</strong>
+            <strong>Запуск (нужны права root и зависимости):</strong>
             <pre><code>sudo ./fluxion</code></pre>
         </li>
         <li>
-            <strong>Kolyma.ru WhoIs</strong> — веб-страница, команды не требуются. <a href="https://kolyma.ru/who/who_m/609-mixajlov-valerij-anatolevich.html" target="_blank">kolyma.ru/who</a>
+            <strong>Kolyma.ru WhoIs</strong> — WHOIS-информация о домене: владелец, контакты, nameservers. <a href="https://kolyma.ru/who/who_m/609-mixajlov-valerij-anatolevich.html" target="_blank">kolyma.ru/who</a>
         </li>
     </ul>
 
-    <h2>Telegram-боты (команды не требуются)</h2>
+    <h2>Telegram-боты</h2>
     <ul>
-        <li><strong>@MotherSearchBot</strong> — <a href="https://t.me/MotherSearchBot" target="_blank">@MotherSearchBot</a></li>
-        <li><strong>@eyeofbeholder_bot</strong> — <a href="https://t.me/eyeofbeholder_bot" target="_blank">@eyeofbeholder_bot</a></li>
+        <li>
+            <strong>@MotherSearchBot</strong> — поиск по каналам, сообщениям, аудио и документам внутри Telegram. <a href="https://t.me/MotherSearchBot" target="_blank">@MotherSearchBot</a>
+        </li>
+        <li>
+            <strong>@eyeofbeholder_bot</strong> — строит профиль интересов пользователя по его подпискам на каналы и чаты. <a href="https://t.me/eyeofbeholder_bot" target="_blank">@eyeofbeholder_bot</a>
+        </li>
     </ul>
 
     <h2>Username, email, домены</h2>
     <ul>
         <li>
-            <strong>NameVine</strong> — веб-сервис. <a href="https://namevine.com/" target="_blank">namevine.com</a>
+            <strong>NameVine</strong> — быстрая проверка занятости username и домена в топ-10 соцсетях (Twitter, GitHub, Instagram и др.). <a href="https://namevine.com/" target="_blank">namevine.com</a>
         </li>
         <li>
-            <strong>Snoop</strong> — OSINT-поиск по никнейму (фокус на СНГ). <a href="https://github.com/snooppr/snoop/releases" target="_blank">GitHub Releases</a>
-            <br><strong>Установка из исходников (Linux/macOS):</strong>
+            <strong>Snoop</strong> — поиск по никнейму на тысячах сайтов с усиленным покрытием русскоязычного сегмента (СНГ). <a href="https://github.com/snooppr/snoop/releases" target="_blank">GitHub Releases</a>
+            <br><strong>Установка из исходников:</strong>
             <pre><code>git clone https://github.com/snooppr/snoop.git
 cd snoop
 pip3 install -r requirements.txt</code></pre>
             <strong>Запуск:</strong>
             <pre><code>python3 snoop.py</code></pre>
-            <em>Готовые бинарные сборки также доступны на странице Releases (не требуют Python).</em>
+            <em>Готовые бинарные сборки без Python доступны на странице Releases.</em>
         </li>
         <li>
-            <strong>Sherlock</strong> — поиск аккаунтов по username на 400+ платформах. <a href="https://github.com/sherlock-project/sherlock" target="_blank">GitHub</a>
+            <strong>Sherlock</strong> — поиск аккаунтов по имени пользователя на 400+ социальных сетях и сайтах. <a href="https://github.com/sherlock-project/sherlock" target="_blank">GitHub</a>
             <br><strong>Установка через pipx (рекомендуется):</strong>
             <pre><code>pipx install sherlock-project</code></pre>
             <strong>Одноразовый запуск в Docker:</strong>
             <pre><code>docker run --rm -t sherlock/sherlock USERNAME</code></pre>
-            <em>Замените <code>USERNAME</code> на искомый никнейм. Для сохранения результата добавьте монтирование тома (см. документацию).</em>
+            <em>Замените <code>USERNAME</code> на искомый никнейм.</em>
         </li>
         <li>
-            <strong>EyeOfGod</strong> — онлайн-сервис (веб-платформа), локальная установка не требуется. <a href="https://eyeofgod.app/" target="_blank">eyeofgod.app</a>
+            <strong>EyeOfGod</strong> — платформа поиска и анализа информации: поиск по изображениям и проверка источников. <a href="https://eyeofgod.app/" target="_blank">eyeofgod.app</a>
         </li>
     </ul>
 
